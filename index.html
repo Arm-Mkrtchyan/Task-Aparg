@@ -12,32 +12,57 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+
     <!--main style-->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 
-<!--header-->
-<header>
-
-</header>
-<!--header end-->
 
 <!--content-->
-<section>
+<section class="task_content">
+    <div class="container">
+        <div class="content_wrapper">
+            <!--search block-->
+            <div class="search_cont">
+                <form action="javaScript:void('0')">
+                    <input id="images_tags" type="search" placeholder="Search">
+                    <button class="get_images_btn">Search</button>
+                </form>
+            </div>
+            <!--  /  search block-->
 
+            <!--all images block-->
+            <div class="all_img_block">
+                <div id="flickr_images">
+
+                </div>
+            </div>
+            <!--  /  all images block-->
+
+            <!--images folders with search words-->
+            <div class="images_folders">
+            </div>
+            <!--  /  images folders with search words-->
+
+            <!--images folders content-->
+            <div class="images_folders_content">
+
+            </div>
+            <!--  /  images folders content-->
+
+        </div>
+    </div>
 </section>
-<!--content end-->
+<!--   /  content-->
 
-<!--footer-->
-<footer>
-</footer>
-<!--footer-->
 
 
 <!--jquery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 <!--bootstrap-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
@@ -48,10 +73,6 @@
 <!--my script-->
 <script src="js/script.js"></script>
 
-
-<script>
-
-</script>
 
 </body>
 </html>

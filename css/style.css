@@ -1,0 +1,77 @@
+
+/*styles for content wrapper and search block*/
+
+section.task_content {
+    background-color: #F2F8F6;
+    padding: 15px 0px;
+}
+
+div.content_wrapper{
+    border: 2px solid #C1D5DC;
+    padding: 5px;
+    background-color: #E7F0EF;
+}
+
+div.search_cont {
+    margin-bottom: 15px;
+}
+
+div.search_cont input {
+    width: calc(100% - 74px);
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+div.search_cont button {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+/*styles for content wrapper and search block end*/
+
+/**** style for images block ****/
+
+div#flickr_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px dashed #C1D5DC;
+    min-height: 250px;
+}
+
+div#flickr_images img {
+    max-height: 120px;
+    margin: 5px;
+}
+
+/**** style for images block end ****/
+
+
+/**** style for folders block  ****/
+div.images_folders {
+    display: flex;
+    margin: 15px 0px;
+}
+
+div.images_folders div{
+    width: 100%;
+    height: 70px;
+    background-color: #84C5FD;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.images_folders div.hover{
+    border: 2px solid red;
+}
+
+.images_folders  {
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 30px;
+}
+
+/**** style for folders block end ****/
