@@ -31,6 +31,28 @@ div.search_cont button {
 
 /**** style for images block ****/
 
+.all_img_block {
+    position: relative;
+}
+
+.success_message {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 16px);
+    text-align: center;
+}
+
+.success_message h3 {
+    color: #16b316;
+    transform: scale(0.1);
+    transition: all 0.5s;
+}
+
+.success_message.active_massage h3 {
+    transform: scale(1);
+}
+
 div#flickr_images {
     display: flex;
     flex-wrap: wrap;
@@ -44,16 +66,32 @@ div#flickr_images img {
     margin: 5px;
 }
 
+
+div#flickr_images img.draggingImg {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.3;
+}
+
+img.draggable  {
+    transition: transform 0.8s;
+}
+img.droppedImage {
+    transform: scale(0.2);
+}
+
 /**** style for images block end ****/
 
 
 /**** style for folders block  ****/
+
+
 div.images_folders {
     display: flex;
     margin: 15px 0px;
 }
 
-div.images_folders div{
+div.images_folders .dropFolder {
     width: 100%;
     height: 70px;
     background-color: #84C5FD;
@@ -63,6 +101,7 @@ div.images_folders div{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 div.images_folders div.hover{
     border: 2px solid red;
@@ -72,6 +111,15 @@ div.images_folders div.hover{
     margin-bottom: 0px;
     color: #fff;
     font-size: 30px;
+}
+
+.images_folders_content .photos_basket{
+    display: none;
+}
+.photos_basket img {
+    max-height: 75px;
+    margin: 0px 5px;
+    pointer-events: none;
 }
 
 /**** style for folders block end ****/
